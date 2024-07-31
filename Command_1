@@ -1,0 +1,18 @@
+
+Q1.a) create empty data.txt file
+vi data.txt
+
+Q1.b) Rename data.txt to data1.txt 
+mv data.txt data1.txt
+
+Q1.c) create file "mine.txt" and change its permission to raed and write
+chmod 600 mine.txt
+
+Q1.d) write command create a new user "cdac3" with uid "5000" 
+sudo useradd -u 5000 cdac3
+
+Q1.e) change the group of "mine.txt" to "cdac2" user
+sudo chgrp cdac2 mine.txt
+
+
+

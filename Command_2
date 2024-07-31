@@ -1,0 +1,14 @@
+Q2) find the given user input file is executable or not
+
+#!/bin/bash
+
+
+echo "Please enter the filename:"
+read filename
+
+
+if [ -x "$filename" ]; then
+  echo "The file $filename is executable."
+else
+  echo "The file $filename is not executable."
+fi

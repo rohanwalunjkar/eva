@@ -1,0 +1,50 @@
+Q3.a) Print first 10 even number
+
+package Docker;
+
+public class PrintEvenNO {
+
+    public static void main(String[] args) {
+
+        for(int i=1;i<=20;i++)
+        {
+            if(i%2==0)
+            {
+                System.out.println(i);
+            }
+        }
+    }
+}
+
+Q3.b) create git repo
+
+git config --global user.email "walunjkarrohan@gmail.com"
+
+git config --global user.password "ranjangaondevi123"
+
+git clone "repoUrl"
+
+git add .
+
+git commit -m "message"
+
+git push origin main
+
+
+Q3.c) create docker file 
+
+
+FROM openjdk:latest
+
+
+WORKDIR /app
+
+
+COPY . /app
+
+
+RUN javac PrintEvenNO.java
+
+
+CMD ["java", "PrintEvenNO"]
+
